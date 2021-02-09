@@ -1,0 +1,52 @@
+<html>
+
+
+<head> <h1>library system</h1> </head>
+
+<body>
+
+    <script>
+
+
+
+
+        var order = prompt("are you a doctor or a student?");
+
+
+        while (order !== "student" && order !== "doctor")
+        {
+            order = prompt("are you a doctor or a student?");
+        }
+
+        var pic = '';
+
+        if (order == "student") {
+            pic = '<img src="b.jpg"/>';
+        }
+        else if (order == "doctor") 
+        {
+            pic = '<img src="b.jpg"/>';
+        }
+        
+
+        var book = prompt("how many courses do you want?");
+        console.log(book);
+        var cons = '';
+    
+        for (var i = 0; i < book; i++)
+        {
+            cons = cons + pic;
+        }
+ 
+         document.write(cons);
+ 
+
+  
+
+    </script>
+
+
+</body>
+
+
+</html>
